@@ -1,0 +1,553 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>이주희 포트폴리오</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">-->
+    <link rel="stylesheet" href="css/w3-dark1.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .w3-content p {
+        font-size: 1em;
+      }
+      .w3-content p b {
+        font-size: 1.3em;
+      }
+      .w3-content a {
+        font-size: 0.9em;
+      }
+
+      /*.top{width:60px; height:60px; position:fixed; bottom:20px; right:20px; padding:0;}*/
+      /*.home{width:60px; height:60px; position:fixed; bottom:20px; right:20px; padding:0;}*/
+
+      footer ul li {
+        list-style: none;
+        float: left;
+        margin-left: 10px;
+      }
+      footer ul {
+        margin-left: -50px;
+      }
+      header p {
+        margin-bottom: 50px;
+      }
+
+      .w3-row-padding img {
+        margin-bottom: 12px;
+      }
+      /* Set the width of the sidenav to 120px */
+      .w3-sidenav {
+        width: 120px;
+        background: #222;
+      }
+      /* Add a left margin to the "page content" that matches the width of the sidenav (120px) */
+      #main {
+        margin-left: 120px;
+      }
+      /* Remove margins from "page content" on small screens */
+      @media only screen and (max-width: 600px) {
+        #main {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="w3-black">
+    <!-- Icon Bar (Sidenav - hidden on small screens) -->
+    <nav class="w3-sidenav w3-center w3-small w3-hide-small">
+      <!-- Avatar image in top left corner -->
+      <img src="img/20180215_1.jpg" style="width: 100%" />
+      <a class="w3-padding-large w3-black" href="#">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+      </a>
+      <a class="w3-padding-large w3-hover-black" href="#about">
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>ABOUT</p>
+      </a>
+      <a class="w3-padding-large w3-hover-black" href="#photos">
+        <i class="fa fa-eye w3-xxlarge"></i>
+        <p>PHOTOS</p>
+      </a>
+      <a class="w3-padding-large w3-hover-black" href="#contact">
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CONTACT</p>
+      </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+      <ul
+        class="
+          w3-navbar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small
+        "
+      >
+        <li class="w3-left" style="width: 25% !important">
+          <a href="#">HOME</a>
+        </li>
+        <li class="w3-left" style="width: 25% !important">
+          <a href="#about">ABOUT</a>
+        </li>
+        <li class="w3-left" style="width: 25% !important">
+          <a href="#photos">PHOTOS</a>
+        </li>
+        <li class="w3-left" style="width: 25% !important">
+          <a href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+      <!-- Header/Home -->
+      <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h1 class="w3-jumbo">
+          <span class="w3-hide-small">I'm</span> LEE JOO HEE.
+        </h1>
+        <p>I want to become a great Web Programmer.</p>
+        <!--<img src="img/3-1.jpg" alt="pink woman" class="w3-image" width="992" height="1108">-->
+        <img
+          src="img/code-1839406_1920.jpg"
+          alt="pink woman"
+          class="w3-image"
+          width="600"
+          height="777"
+        />
+      </header>
+
+      <!-- About Section -->
+      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+        <h2 class="w3-text-light-grey">About Me</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+        <p>
+          <b> " 1만 시간의 법칙 " </b><br /><br />
+          <b
+            >어떤 분야의 전문가가 되기 위해서는 최소한 1만 시간 정도의 훈련이
+            필요하다는 법칙이다.<br />
+            1만 시간은 매일 3시간씩 훈련할 경우 약 10년, 하루 10시간씩 투자할
+            경우 3년이 걸린다.
+          </b>
+          <br />
+        </p>
+
+        <p>말콤 글래드웰(Malcolm Gladwell)의 저서 《아웃라이어(Outliers)》</p>
+        <br />
+        <p>#끈기 #책임감 #긍정마인드 #스마일</p>
+        <p>
+          단순히 10년을 채우기만 하는 것이 아니라, 업무를 통하여 내자신 또한
+          회사와 함께 발전하고 성장할 수 있는 것이<br />
+          무엇인지를 끊임없이 생각하고 연관짓고 싶습니다.
+        </p>
+
+        <!--
+                <b>열정은 어디에서 오는가?</b><br /><br />
+                <b>知之者不如之者, 好之者不如樂之者.</b><br />
+                지지자불여호지자, 호지자불여락지자.<br /><br />
+                공자께서 말씀하시길<br />
+                "어떤 사실을 아는 사람은 그것을 좋아하는 사람만 못하고,<br />
+                <b>좋아하는 사람은 즐기는 사람만 못하다.</b><br />
+-->
+
+        <!--Passion : 열정은 가지고 일을 잘하고 싶습니다.<br />
+                Interest : 재미 있게 일하고 싶습니다.<br />
+                Expression : 최대한 표현하려 할 것입니다.<br />
+                Creativity & Trend : 사용자의 경험을 살린 대중적인 디자이너가 되고 싶습니다.<br />
+                Value : 가치있는 디자이너가 되기 위해서<br />
+                Challenge : 끊임없는 노력과 도전을 할 것입니다.<br />-->
+        <br />
+
+        <a href="resume_leejoohee_20200403.hwp"
+          ><p><b>입사지원서 및 자기소개서.hwp</b></p></a
+        >
+        <br />
+
+        <br /><br /><br />
+        <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+        <p class="w3-wide">Photoshop CS6</p>
+        <div class="w3-progress-container">
+          <div class="w3-progressbar" style="width: 90%"></div>
+        </div>
+        <p class="w3-wide">Illustrator CS6</p>
+        <div class="w3-progress-container">
+          <div class="w3-progressbar" style="width: 80%"></div>
+        </div>
+        <p class="w3-wide">HTML5, CSS3</p>
+        <div class="w3-progress-container">
+          <div class="w3-progressbar" style="width: 90%"></div>
+        </div>
+        <p class="w3-wide">Power Point</p>
+        <div class="w3-progress-container">
+          <div class="w3-progressbar" style="width: 70%"></div>
+        </div>
+        <p class="w3-wide">Web Design</p>
+        <div class="w3-progress-container">
+          <div class="w3-progressbar" style="width: 80%"></div>
+        </div>
+        <p class="w3-wide">Programming Tool</p>
+        <div class="w3-progress-container">
+          <div class="w3-progressbar" style="width: 70%"></div>
+        </div>
+        <br />
+
+        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">교육 과정명</span><br />
+            인터렉티브 웹 디자인<br />
+            NCS 국가직무능력표준
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">교육기간</span><br />
+            6개월<br />
+            (2016.5.16 ~ 2016.12.5)
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">교육기관</span><br /><br />
+            그린컴퓨터디자인학원
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">교육내용</span><br />
+            UI/UX, HTML, CSS3, 웹 표준<br />
+            Potoshop, Illustrator CS6
+          </div>
+        </div>
+        <!-- <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">경력사항</span><br /><br />
+            미국 구매대행 브랜드 쇼핑몰<br />
+            '스타일팜'
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">재직기간</span><br /><br />
+            2년<br />
+            (2016.11.26 ~ 2018.10.31)
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">사용플랫폼</span><br /><br />
+            고도몰 / 네이버스토어팜 <br />
+            11번가 / 티몬<br />
+            카카오플러스친구
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">업무내용</span><br />
+            주문 / 배송 / 재고관리 / 상품등록<br />
+            딜제작 / CS업무 / 사이트관리<br />
+            마케팅,광고,SNS홍보 / <br />
+            상세페이지,배너 제작
+          </div>
+        </div> -->
+        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">직무능력향상과정</span><br />
+            디지털디자인 향상과정<br />
+            (웹표준 및 웹접근성)
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">훈련기간</span><br />
+            1개월 (10회차)<br />
+            (2018-09-11 ~ 2018-10-12)
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">훈련기관</span><br /><br />
+            그린컴퓨터아트학원<br />
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">훈련내용</span><br />
+            HTML5 / CSS3 / <br />
+            웹표준 / 웹 접근성 / 반응형
+          </div>
+        </div>
+        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">교육 과정명</span><br />
+            머신러닝 활용 JAVA 웹 응용<br />
+            SW 엔지니어 양성 과정
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">교육기간</span><br />
+            6개월<br />
+            (2019.10 ~ 2020.4)
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">교육기관</span><br /><br />
+            넥스트 IT 교육센터
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">교육내용</span><br />
+            Java, Html, Css, JavaScript, jQuery, Jsp, Servlet,<br />
+            Spring Framework, 자바FX, 파이썬 등으로 프로그램 구현
+          </div>
+        </div>
+        <br /><br /><br /><br />
+
+        <!-- Grid for pricing tables -->
+        <h3 class="w3-padding-16 w3-text-light-grey">My Portfolio</h3>
+        <div class="w3-row-padding" style="margin: 0 -16px">
+          <div class="w3-half w3-margin-bottom">
+            <ul
+              class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off"
+            >
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">
+                가구 반응형 페이지
+              </li>
+              <li>
+                <a href="home.html" target="_blank"
+                  ><img src="img/lay1.jpg" style="width: 100%"
+                /></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="w3-half">
+            <ul
+              class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off"
+            >
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">
+                스타일팜 쇼핑몰 디자인
+              </li>
+              <li>
+                <a href="http://www.stylepalm.com" target="_blank"
+                  ><img src="img/stylepalm_homepage_1.jpg" style="width: 100%"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <!-- End Grid/Pricing tables -->
+        </div>
+
+        <!-- Testimonials -->
+        <!--
+            <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
+            <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+            <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
+            <p>Jane Doe saved us from a web disaster.</p><br>
+
+            <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+            <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+            <p>No one is better than Jane Doe.</p>
+-->
+        <!-- End About Section -->
+      </div>
+
+      <!-- Portfolio Section -->
+      <div class="w3-padding-64 w3-content" id="photos">
+        <h2 class="w3-text-light-grey">My Photos</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+
+        <!-- Grid for photos -->
+        <div class="w3-row-padding" style="margin: 0 -16px">
+          <div class="w3-half">
+            <a href="2016.12.1-gallery.html" target="_blank"
+              ><img src="img/PHOTOFOLIO_gellary.jpg" style="width: 100%"
+            /></a>
+            <!--                    <a href="gagu1.html" target="_blank"><img src="img/lay4.jpg" style="width:50%"></a>-->
+          </div>
+          <div class="w3-half">
+            <a href="index_wedding.html" target="_blank"
+              ><img src="img/wedding/cap.png" style="width: 50%"
+            /></a>
+            <!--                    <a href="gagu1.html" target="_blank"><img src="img/lay4.jpg" style="width:50%"></a>-->
+          </div>
+          <!-- End photo grid -->
+        </div>
+        <!-- End Portfolio Section -->
+      </div>
+
+      <!-- Contact Section -->
+      <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey">Contact Me</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+
+        <div class="w3-section">
+          <p>
+            <i
+              class="
+                fa fa-map-marker fa-fw
+                w3-text-white w3-xxlarge w3-margin-right
+              "
+            ></i
+            >대전광역시 서구 변동 15-9 포도나무
+          </p>
+          <p>
+            <i
+              class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"
+            ></i>
+            Phone : 010 - 9614 - 8188
+          </p>
+          <p>
+            <i
+              class="
+                fa fa-envelope fa-fw
+                w3-text-white w3-xxlarge w3-margin-right
+              "
+            ></i>
+            Email : jhjh20190831@gmail.com
+          </p>
+        </div>
+        <br />
+        <p>Lets get in touch. Send me a message:</p>
+
+        <form action="form.asp" target="_blank">
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Name"
+              required
+              name="Name"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Email"
+              required
+              name="Email"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Subject"
+              required
+              name="Subject"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Message"
+              required
+              name="Message"
+            />
+          </p>
+          <p>
+            <button class="w3-btn w3-light-grey w3-padding-large" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form>
+        <!-- End Contact Section -->
+      </div>
+
+      <!-- Footer -->
+      <!--<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+            <i class="fa fa-facebook-official w3-hover-text-indigo">
+                    <a href="https://www.facebook.com/loo4os2o"></a></i>
+            <i class="fa fa-instagram w3-hover-text-purple"></i>
+            <i class="fa fa-snapchat w3-hover-text-yellow"></i>
+            <i class="fa fa-pinterest-p w3-hover-text-red"></i>
+            <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+            <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+            <p class="w3-medium">Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>-->
+      <!-- End footer -->
+
+      <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/loo4os2o">
+              <i class="fa fa-facebook-official w3-hover-text-indigo"></i
+            ></a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/loo4os2o/">
+              <i class="fa fa-instagram w3-hover-text-purple"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+            </a>
+          </li>
+        </ul>
+
+        <br />
+        <p class="w3-medium">
+          Copyright2016 LeeJooHee Portfolio.All rights reserved.
+        </p>
+      </footer>
+
+      <!-- END PAGE CONTENT -->
+    </div>
+
+    <!--<div class="top"><a href="#top"><img src="img/logo5555.png" /></a></div>-->
+    <!--<div class="home"><a href="index.html"><img src="img/home4040-1.png" alt="home" /></a></div>-->
+
+    <!-- POPUP -->
+    <!--
+    <div id="divpop" style="position:absolute;left:20px;top:80px;z-index:200;visibility:hidden; color:black;">
+        <table width=250 height=250 cellpadding=2 cellspacing=0>
+            <tr>
+                <td height=300 align=center bgcolor=#ffe5cb>
+                    <b style="font-size:18px">Web Site 이용시 ★주의★</b><br /><br />
+                    <b>Chrome</b>에서 최적화된<br />
+                    포트폴리오입니다.<br /><br />
+                    <b>Explorer</b> 에서 구동이<br />
+                    안 될 수 있습니다.<br /><br />
+                    <b>Chrome</b> 브라우저로<br />
+                    열어주시기 부탁드립니다.<br><br>
+                    감사합니다^^
+
+                </td>
+            </tr>
+            <tr>
+                <form name="notice_form">
+                    <td class="check" align=right bgcolor=#ffc596>
+                        <input type="checkbox" name="chkbox" value="checkbox">오늘 하루 이 창을 열지 않음
+                        <a href="javascript:closeWin();"><B style="color:#823535">[닫기]</B></a>
+                    </td>
+                </form>
+            </tr>
+
+        </table>
+    </div>
+-->
+    <script language="Javascript">
+      cookiedata = document.cookie;
+      if (cookiedata.indexOf("maindiv=done") < 0) {
+        document.all["divpop"].style.visibility = "visible";
+      } else {
+        document.all["divpop"].style.visibility = "hidden";
+      }
+    </script>
+
+    <!--popup 스크립-->
+    <script language="Javascript">
+      // function setCookie( name, value, expiredays ) {
+      //     var todayDate = new Date();
+      //         todayDate.setDate( todayDate.getDate() + expiredays );
+      //         document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+      //     }
+      // function closeWin() {
+      //     if ( document.notice_form.chkbox.checked ){
+      //         setCookie( "maindiv", "done" , 1 );
+      //     }
+      //     document.all['divpop'].style.visibility = "hidden";
+      // }
+    </script>
+  </body>
+</html>

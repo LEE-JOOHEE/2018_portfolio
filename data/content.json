@@ -1,0 +1,281 @@
+[
+  {
+    "title": "일러스트 연습 - 사자",
+    "category": "illustrator",
+    "images": {
+      "thumb": "img/th-il-2.jpg",
+      "large": "img/1il-2.jpg"
+    },
+    "date": "2016-06-02"
+  },
+  {
+    "title": "일러스트 연습 - 패스파인더",
+    "category": "illustrator",
+    "images": {
+      "thumb": "img/th-il-5.jpg",
+      "large": "img/1il-5.jpg"
+    },
+    "date": "2016-05-30"
+  },
+  {
+    "title": "일러스트 연습 - 캐릭터",
+    "category": "illustrator",
+    "images": {
+      "thumb": "img/th-il-7.jpg",
+      "large": "img/1il-7.jpg"
+    },
+    "date": "2016-06-14"
+  },
+  {
+    "title": "일러스트 연습 - 과일",
+    "category": "illustrator",
+    "images": {
+      "thumb": "img/th-il-10.jpg",
+      "large": "img/1il-10.jpg"
+    },
+    "date": "2016-10-10"
+  },
+  {
+    "title": "포토샵 합성 - CK",
+    "category": "Photoshop",
+    "images": {
+      "thumb": "img/th-po-ck1.jpg",
+      "large": "img/1po-ck1.jpg"
+    },
+    "date": "2016-06-15"
+  },
+  {
+    "title": "InDesign-1",
+    "category": "Craftsman Computer Graphics Operation",
+    "images": {
+      "thumb": "img/th-indesign-1.jpg",
+      "large": "img/indesign-1.jpg"
+    },
+    "date": "2016-08-19"
+  },
+  {
+    "title": "InDesign-2",
+    "category": "Craftsman Computer Graphics Operation",
+    "images": {
+      "thumb": "img/th-indesign-2.jpg",
+      "large": "img/indesign-2.jpg"
+    },
+    "date": "2016-08-17"
+  },
+   {
+    "title": "공지사항-notice",
+    "category": "photoshop",
+    "images": {
+      "thumb": "img/notice_th230.jpg",
+      "large": "img/notice_ps500.jpg"
+    },
+    "date": "2017-07-14"
+  },
+    {
+    "title": "질문과 답변-Q&A",
+    "category": "photoshop",
+    "images": {
+      "thumb": "img/q&anone_th230.jpg",
+      "large": "img/q&anone_ps500.jpg"
+    },
+    "date": "2017-03-08"
+  },
+    {
+    "title": "쇼핑가이드-shopping guide",
+    "category": "photoshop",
+    "images": {
+      "thumb": "img/shopping-guide_th230.jpg",
+      "large": "img/shopping-guide_ps500.jpg"
+    },
+    "date": "2018-05-28"
+  },
+    {
+    "title": "카카오 플러스친구-kakao pop-up",
+    "category": "photoshop",
+    "images": {
+      "thumb": "img/kakao-banner_th230.jpg",
+      "large": "img/kakao-banner_ps500.jpg"
+    },
+    "date": "2017-12-05"
+  },
+    {
+    "title": "카카오 플러스친구 모바일-kakao pop-up mobile",
+    "category": "photoshop",
+    "images": {
+      "thumb": "img/kakao-pop-up-mobile_th230.jpg",
+      "large": "img/kakao-pop-up-mobile_ps308.jpg"
+    },
+    "date": "2017-12-05"
+  },
+    {
+    "title": "버스킹팀 '플라워앤비' 공연 홍보물_1",
+    "category": "illustrator",
+    "images": {
+      "thumb": "img/FnB_th230.jpg",
+      "large": "img/FnB_500.jpg"
+    },
+    "date": "2017-08-31"
+  },
+    {
+    "title": "버스킹팀 '플라워앤비' 공연 홍보물_2",
+    "category": "illustrator",
+    "images": {
+      "thumb": "img/fnb2_th230.jpg",
+      "large": "img/fnb2_500.jpg"
+    },
+    "date": "2017-08-04"
+  },
+    {
+    "title": "상세페이지 인트로 이미지 작업-apm monaco",
+    "category": "photoshop",
+    "images": {
+      "thumb": "img/APM-MONACO_th230.jpg",
+      "large": "img/APM-MONACO_500.jpg"
+    },
+    "date": "2017-11-15"
+  },
+    {
+    "title": "상세페이지 인트로 이미지 작업-swarovski",
+    "category": "photoshop",
+    "images": {
+      "thumb": "img/swarovski_th230.jpg",
+      "large": "img/swarovski_500.jpg"
+    },
+    "date": "2018-01-23"
+  },
+    {
+    "title": "상세페이지 인트로 이미지 작업-pandora",
+    "category": "photoshop",
+    "images": {
+      "thumb": "img/pandora_th230.jpg",
+      "large": "img/pandora_500.jpg"
+    },
+    "date": "2017-05-17"
+  },
+    {
+    "title": "상세페이지 인트로 이미지 작업-swell",
+    "category": "photoshop",
+    "images": {
+      "thumb": "img/swell_th230.jpg",
+      "large": "img/swell_500.jpg"
+    },
+    "date": "2017-03-23"
+  },
+    {
+    "title": "상세페이지 인트로 이미지 작업-jpro",
+    "category": "photoshop",
+    "images": {
+      "thumb": "img/j-pro_th230.jpg",
+      "large": "img/j-pro_500.jpg"
+    },
+    "date": "2017-05-29"
+  },
+    {
+    "title": "로고작업",
+    "category": "illustrator",
+    "images": {
+      "thumb": "img/20181203_logo_all_th230.jpg",
+      "large": "img/20181203_logo_all_500.jpg"
+    },
+    "date": "2018-12-03"
+  },
+    {
+    "title": "홈페이지 이미지 작업-1",
+    "category": "photoshop",
+    "images": {
+      "thumb": "img/20181204_ICO-CRYPTO_1_th230.png",
+      "large": "img/20181204_ICO-CRYPTO_1_500.png"
+    },
+    "date": "2018-12-04"
+  },
+    {
+    "title": "홈페이지 시안-1",
+    "category": "photoshop",
+    "images": {
+      "thumb": "img/20181204_ICO-CRYPTO_page_1_th230.jpg",
+      "large": "img/20181204_ICO-CRYPTO_page_1_500.jpg"
+    },
+    "date": "2018-12-04"
+  },
+    {
+    "title": "아이콘작업",
+    "category": "illustrator",
+    "images": {
+      "thumb": "img/20181204_ICO-CRYPTO_icon_th230.jpg",
+      "large": "img/20181204_ICO-CRYPTO_icon_500.jpg"
+    },
+    "date": "2018-12-04"
+  },
+    {
+    "title": "홈페이지 시안-2",
+    "category": "photoshop",
+    "images": {
+      "thumb": "img/20181205_ICO-CRYPTO_icon_page_th230.jpg",
+      "large": "img/20181205_ICO-CRYPTO_icon_page_500.jpg"
+    },
+    "date": "2018-12-04"
+  },
+    {
+    "title": "홈페이지 시안-3",
+    "category": "photoshop",
+    "images": {
+      "thumb": "img/20181204_ICO-CRYPTO_page2_th230.jpg",
+      "large": "img/20181204_ICO-CRYPTO_page2_500.jpg"
+    },
+    "date": "2018-12-04"
+  },
+    {
+    "title": "홈페이지 시안-4",
+    "category": "photoshop",
+    "images": {
+      "thumb": "img/20181204_ICO-CRYPTO_page3_th230.jpg",
+      "large": "img/20181204_ICO-CRYPTO_page3_500.jpg"
+    },
+    "date": "2018-12-04"
+  },
+    {
+    "title": "홈페이지 시안-5",
+    "category": "photoshop",
+    "images": {
+      "thumb": "img/20181204_ICO-CRYPTO_page4_th230.jpg",
+      "large": "img/20181204_ICO-CRYPTO_page4_500.jpg"
+    },
+    "date": "2018-12-04"
+  },
+    {
+    "title": "홈페이지 이미지 작업-2",
+    "category": "photoshop",
+    "images": {
+      "thumb": "img/20181205_FAQ_th230.png",
+      "large": "img/20181205_FAQ_500.png"
+    },
+    "date": "2018-12-05"
+  },
+    {
+    "title": "홈페이지 시안-6",
+    "category": "photoshop",
+    "images": {
+      "thumb": "img/20181205_ICO-CRYPTO_FAQ_page_th230.jpg",
+      "large": "img/20181205_ICO-CRYPTO_FAQ_page_500.jpg"
+    },
+    "date": "2018-12-05"
+  },
+    {
+    "title": "홈페이지 이미지 작업-3",
+    "category": "photoshop",
+    "images": {
+      "thumb": "img/20181205_WEC_phone_th230.png",
+      "large": "img/20181205_WEC_phone_500.png"
+    },
+    "date": "2018-12-05"
+  },
+    {
+    "title": "홈페이지 이미지 작업-4",
+    "category": "photoshop",
+    "images": {
+      "thumb": "img/20181206_WEC_rule_th230.png",
+      "large": "img/20181206_WEC_rule_500.png"
+    },
+    "date": "2018-12-05"
+  }
+]

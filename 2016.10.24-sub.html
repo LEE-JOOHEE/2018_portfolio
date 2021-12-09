@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>반응형-LivingRoom</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Pragati+Narrow" rel="stylesheet"><!--영문폰트-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!--구글 cdn-->
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <!--js파일 안에 마우스 휠 플러그인-->
+    <script src="js/Script1.js"></script>
+    <!--사이트에서 js파일 다운-->
+    
+    <!--헤더-->
+    <!-- Reset CSS File -->
+    <link rel="stylesheet" type="text/css" href="header/reset.css" media="screen" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" type="text/css" href="header/mystyle.css" media="screen" />
+    
+    
+    <script>
+        //배경사진 빈공간 없애는 스크립트
+        //1번은 처음 값을 잡는것. 2번째는 on resize될때 값을 잡는것으로 셋트다.
+        $(document).ready(function () {
+            var ht = $(window).height();
+            $("section").height(ht);
+
+        $(window).on("resize", function () {
+            var ht = $(window).height();
+            $("section").height(ht)
+        });
+
+        //뒷배경 바운딩 되는 느낌(easeOutBack) - 통통 튀면서 위에라인에 맞춘다.
+        $("section").on("mousewheel", function (event, delta) {
+            if (delta > 0) {
+                //변수 prev에 현재 휠을 움직인 section에서 이전 section의 offset().top위치 저장
+                var prev = $(this).prev().offset().top;
+                //문서 전체를 prev에 저장된 위치로 이동
+                $("html,body").stop().animate({ "scrollTop": prev }, 1400, "easeOutBack");
+
+            } else if (delta < 0) {
+                var next = $(this).next().offset().top;
+                $("html,body").stop().animate({ "scrollTop": next }, 1400, "easeOutBack");
+            }
+        });
+        });
+
+    </script>
+
+     <style>
+        /*reset*/
+        *{margin:0; padding:0;}
+
+        /*레이아웃*/
+        section{width:100%; height:1000px; position:relative; background-size:cover;
+                background-position:right center; background-attachment:fixed; overflow:hidden;}
+        section:nth-child(1){background-image:url(img/living1-1600950.png);}
+        section:nth-child(2){background-image:url(img/living5-1600950.png);}
+        section:nth-child(3){background-image:url(img/sofa-1600950.png);}
+        section:nth-child(4){background-image:url(img/living6-1600950.png);}
+
+        /*위치잡기*/
+
+        section:nth-child(1)>article{position:absolute; top:25%; left:60%;
+                                     border-top:1.5px solid white; border-bottom:1.5px solid white; color:lemonchiffon;}
+        section:nth-child(1)>article p{font-family:'Pragati Narrow', sans-serif; font-size:40px; letter-spacing:2px; line-height:1;}
+        section:nth-child(1)>article span{font-family:'Pragati Narrow', sans-serif; font-size:1.6em; line-height:2;}
+        
+        
+        section:nth-child(2)>article{position:absolute; top:20%; left:71%;
+                                     border-top:1.5px solid white; border-bottom:1.5px solid white; color:mediumvioletred;}
+        section:nth-child(2)>article p{font-family:'Pragati Narrow', sans-serif; font-size:40px; letter-spacing:2px; line-height:1;}
+        section:nth-child(2)>article span{font-family:'Pragati Narrow', sans-serif; font-size:1.6em; line-height:2;}
+
+        
+        section:nth-child(3)>article{position:absolute; top:30%; left:50%;
+                                     border-top:1.5px solid white; border-bottom:1.5px solid white; color:lightgrey;}
+        section:nth-child(3)>article p{font-family:'Pragati Narrow', sans-serif; font-size:40px; letter-spacing:2px; line-height:1;}
+        section:nth-child(3)>article span{font-family:'Pragati Narrow', sans-serif; font-size:1.6em; line-height:2;}
+
+
+        section:nth-child(4)>article{position:absolute; top:13%; left:15%;
+                                     border-top:1.5px solid white; border-bottom:1.5px solid white;}
+        section:nth-child(4)>article p{font-family:'Pragati Narrow', sans-serif; font-size:40px; letter-spacing:2px; line-height:1; color:saddlebrown;}
+        section:nth-child(4)>article span{font-family:'Pragati Narrow', sans-serif; font-size:1.6em; line-height:2; color:chocolate;}
+    
+        
+        /*오른쪽 탑으로*/
+        /*.home{width:60px; height:60px; position:fixed; bottom:20px; right:20px; padding:0;}*/
+        .top{width:60px; height:60px; position:fixed; bottom:20px; right:20px; padding:0;}
+
+         @media screen and (min-width:1024px) and (max-width:1279px) {
+         section:nth-child(1)>article{position:absolute; top:29%; left:47%;
+                                     border-top:1.5px solid white; border-bottom:1.5px solid white; color:lemonchiffon;}
+         section:nth-child(2)>article{position:absolute; top:20%; left:61%;
+                                     border-top:1.5px solid white; border-bottom:1.5px solid white; color:mediumvioletred;}
+         section:nth-child(3)>article{position:absolute; top:30%; left:35%;
+                                     border-top:1.5px solid white; border-bottom:1.5px solid white; color:lightgrey;}
+         section:nth-child(4)>article{position:absolute; top:10%; left:5%;
+                                     border-top:1.5px solid white; border-bottom:1.5px solid white;}
+
+        section:nth-child(1)>article p{font-family:'Pragati Narrow', sans-serif; font-size:38px; letter-spacing:2px; line-height:1;}
+        section:nth-child(1)>article span{font-family:'Pragati Narrow', sans-serif; font-size:1.5em; line-height:2;}
+        section:nth-child(2)>article p{font-family:'Pragati Narrow', sans-serif; font-size:38px; letter-spacing:2px; line-height:1;}
+        section:nth-child(2)>article span{font-family:'Pragati Narrow', sans-serif; font-size:1.5em; line-height:2;}
+        section:nth-child(3)>article p{font-family:'Pragati Narrow', sans-serif; font-size:38px; letter-spacing:2px; line-height:1;}
+        section:nth-child(3)>article span{font-family:'Pragati Narrow', sans-serif; font-size:1.5em; line-height:2;}
+        section:nth-child(4)>article p{font-family:'Pragati Narrow', sans-serif; font-size:38px; letter-spacing:2px; line-height:1; color:saddlebrown;}
+        section:nth-child(4)>article span{font-family:'Pragati Narrow', sans-serif; font-size:1.5em; line-height:2; color:chocolate;}
+         }
+
+         @media screen and (min-width:780px) and (max-width:1023px) {
+         section:nth-child(1)>article{position:absolute; top:30%; left:38%;
+                                     border-top:1.5px solid white; border-bottom:1.5px solid white; color:lemonchiffon;}
+         section:nth-child(2)>article{position:absolute; top:20%; left:50%;
+                                     border-top:1.5px solid white; border-bottom:1.5px solid white; color:mediumvioletred;}
+         section:nth-child(3)>article{position:absolute; top:70%; left:50%;
+                                     border-top:1.5px solid white; border-bottom:1.5px solid white; color:lightgrey;}
+         section:nth-child(4)>article{position:absolute; top:15%; left:60%;
+                                     border-top:1.5px solid white; border-bottom:1.5px solid white;}
+
+          section:nth-child(1)>article p{font-family:'Pragati Narrow', sans-serif; font-size:35px; letter-spacing:2px; line-height:1;}
+        section:nth-child(1)>article span{font-family:'Pragati Narrow', sans-serif; font-size:1.3em; line-height:2;}
+        section:nth-child(2)>article p{font-family:'Pragati Narrow', sans-serif; font-size:35px; letter-spacing:2px; line-height:1;}
+        section:nth-child(2)>article span{font-family:'Pragati Narrow', sans-serif; font-size:1.3em; line-height:2;}
+        section:nth-child(3)>article p{font-family:'Pragati Narrow', sans-serif; font-size:35px; letter-spacing:2px; line-height:1;}
+        section:nth-child(3)>article span{font-family:'Pragati Narrow', sans-serif; font-size:1.3em; line-height:2;}
+        section:nth-child(4)>article p{font-family:'Pragati Narrow', sans-serif; font-size:35px; letter-spacing:2px; line-height:1; color:saddlebrown;}
+        section:nth-child(4)>article span{font-family:'Pragati Narrow', sans-serif; font-size:1.3em; line-height:2; color:chocolate;}
+      
+         }
+
+         @media screen and (min-width:480px) and (max-width:779px) {
+         section:nth-child(1)>article{position:absolute; top:33%; left:22%;
+                                     border-top:1.5px solid white; border-bottom:1.5px solid white; color:lemonchiffon;}
+         section:nth-child(2)>article{position:absolute; top:20%; left:39%;
+                                     border-top:1.5px solid white; border-bottom:1.5px solid white; color:mediumvioletred;}
+         section:nth-child(3)>article{position:absolute; top:70%; left:35%;
+                                     border-top:1.5px solid white; border-bottom:1.5px solid white; color:lightgrey;}
+         section:nth-child(4)>article{position:absolute; top:20%; left:50%;
+                                     border-top:1.5px solid white; border-bottom:1.5px solid white;}
+
+        section:nth-child(1)>article p{font-family:'Pragati Narrow', sans-serif; font-size:30px; letter-spacing:2px; line-height:1;}
+        section:nth-child(1)>article span{font-family:'Pragati Narrow', sans-serif; font-size:1.2em; line-height:2;}
+        section:nth-child(2)>article p{font-family:'Pragati Narrow', sans-serif; font-size:30px; letter-spacing:2px; line-height:1;}
+        section:nth-child(2)>article span{font-family:'Pragati Narrow', sans-serif; font-size:1.2em; line-height:2;}
+        section:nth-child(3)>article p{font-family:'Pragati Narrow', sans-serif; font-size:30px; letter-spacing:2px; line-height:1;}
+        section:nth-child(3)>article span{font-family:'Pragati Narrow', sans-serif; font-size:1.2em; line-height:2;}
+        section:nth-child(4)>article p{font-family:'Pragati Narrow', sans-serif; font-size:30px; letter-spacing:2px; line-height:1; color:saddlebrown;}
+        section:nth-child(4)>article span{font-family:'Pragati Narrow', sans-serif; font-size:1.2em; line-height:2; color:chocolate;}
+         }
+
+         @media screen and (max-width:479px) {
+         section:nth-child(1)>article{position:absolute; top:35%; left:3%;
+                                     border-top:1.5px solid white; border-bottom:1.5px solid white; color:lemonchiffon;}
+         section:nth-child(2)>article{position:absolute; top:25%; left:20%;
+                                     border-top:1.5px solid white; border-bottom:1.5px solid white; color:mediumvioletred;}
+         section:nth-child(3)>article{position:absolute; top:65%; left:25%;
+                                     border-top:1.5px solid white; border-bottom:1.5px solid white; color:lightgrey;}
+         section:nth-child(4)>article{position:absolute; top:25%; left:35%;
+                                     border-top:1.5px solid white; border-bottom:1.5px solid white;}
+
+        section:nth-child(1)>article p{font-family:'Pragati Narrow', sans-serif; font-size:20px; letter-spacing:2px; line-height:1;}
+        section:nth-child(1)>article span{font-family:'Pragati Narrow', sans-serif; font-size:0.9em; line-height:2;}
+        section:nth-child(2)>article p{font-family:'Pragati Narrow', sans-serif; font-size:20px; letter-spacing:2px; line-height:1;}
+        section:nth-child(2)>article span{font-family:'Pragati Narrow', sans-serif; font-size:0.9em; line-height:2;}
+        section:nth-child(3)>article p{font-family:'Pragati Narrow', sans-serif; font-size:20px; letter-spacing:2px; line-height:1;}
+        section:nth-child(3)>article span{font-family:'Pragati Narrow', sans-serif; font-size:0.9em; line-height:2;}
+        section:nth-child(4)>article p{font-family:'Pragati Narrow', sans-serif; font-size:20px; letter-spacing:2px; line-height:1; color:saddlebrown;}
+        section:nth-child(4)>article span{font-family:'Pragati Narrow', sans-serif; font-size:0.9em; line-height:2; color:chocolate;}
+         }
+
+    </style>
+    
+
+</head>
+<body>
+    <!--=====================================
+                   header
+    ======================================-->
+    <div id="menu_div">
+        <div id="navigation">
+            <div id="menu">
+                <ul id="nav">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="2016.10.31-bedroom.html">Bed Room</a></li>
+                    <li><a href="2016.10.24-sub.html">Living Room</a></li>
+                    <li><a href="2016.11.7-dining room.html">Dining Room</a></li>
+                    <li><a href="2016.11.17-interior.html">Iinterior</a></li>
+                </ul><!-- #nav END-->
+            </div><!-- #menu END-->
+        </div><!-- #navigation END-->
+    </div><!-- #menu_div END-->
+
+    <div>
+        <section>
+            <article>
+                <span>Relax after along day Living</span>
+                <p>Relax after a long day</p>
+                <p>Living</p>
+                <span>Relax after along day Living</span>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <span>Quiet Colors, Bold Impact</span>
+                <p>Quiet Colors, </p>
+                <p>Bold Impact</p>
+                <span>Quiet Colors, Bold Impact</span>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <span>Simple pleasures Liveing room</span>
+                <p>Simple pleasures</p>
+                <p>Living room</p>
+                <span>Simple pleasures Liveing room</span>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <span>Relaxtion in Color Space to Impress</span>
+                <p>Relaxtion in Color</p>
+                <p>Space to Impress</p>
+                <span>Relaxtion in Color Space to Impress</span>
+            </article>
+        </section>
+
+        <!--<div class="home"><a href="index.html"><img src="img/logo5555.png" alt="home" /></a></div>-->
+        <div class="top"><a href="#top"><img src="img/logo5555.png" /></a></div>
+    </div>
+</body>
+</html>
