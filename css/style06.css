@@ -1,76 +1,182 @@
 ﻿@charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');/*메인01~04폰트*/
-@import url('https://fonts.googleapis.com/css?family=Orbitron');/*사진안에 글자폰트*/
-@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);/*한글폰트-한나체*/
+@import url("https://fonts.googleapis.com/css?family=Bungee+Inline"); /*메인01~04폰트*/
+@import url("https://fonts.googleapis.com/css?family=Orbitron"); /*사진안에 글자폰트*/
+@import url("http://fonts.googleapis.com/earlyaccess/hanna.css"); /*한글폰트-한나체*/
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@500&display=swap");
+/*2021추가-IBM Plex Sans KR*/
 
 /* reset */
-* { margin:0;  padding:0;}
-ul { list-style: none;  font-family:'Righteous','Hanna', ;}
-a { outline:0; text-decoration:none; color:#555; }
-img { border:0;}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  font-family: "Righteous", "IBM Plex Sans KR", "Hanna";
+}
+a {
+  outline: 0;
+  text-decoration: none;
+  color: #555;
+}
+img {
+  border: 0;
+}
 /*body { font:12px/1.6 sans-serif; color:#555; font-family:'Hanna', serif;}*/
-body { font:12px/1.6 'hanna', serif; color:#555;  }
-
+body {
+  font: 12px/1.6 "IBM Plex Sans KR", "hanna", serif;
+  color: #555;
+}
 
 /*푸터*/
-    footer{width:100%; background-color:#102e3d; color:#ffd3c2; height:200px;}
-    footer #section1{overflow:hidden;}
-    footer #section1 div { float:left; margin-top:50px;}
-    footer #section1 .footer_logo{margin-left:20%; margin-top:40px;}
-    footer #section1 .footer_name {margin-left:13%; margin-right:13%;}
-    footer #section1 .footer_time{margin-top:20px;}
-    footer #section1 .footer_time li h2{font-family:'Hanna', serif; font-size:1.5em;}
-    section:after{content:""; display:block; clear:both; padding-top:100px;}
+footer {
+  width: 100%;
+  background-color: #102e3d;
+  color: #ffd3c2;
+  height: 200px;
+}
+footer #section1 {
+  overflow: hidden;
+}
+footer #section1 div {
+  float: left;
+  margin-top: 50px;
+}
+footer #section1 .footer_logo {
+  margin-left: 20%;
+  margin-top: 40px;
+}
+footer #section1 .footer_name {
+  margin-left: 13%;
+  margin-right: 13%;
+}
+footer #section1 .footer_time {
+  margin-top: 20px;
+}
+footer #section1 .footer_time li h2 {
+  font-family: "IBM Plex Sans KR", "Hanna", serif;
+  font-size: 1.5em;
+}
+section:after {
+  content: "";
+  display: block;
+  clear: both;
+  padding-top: 100px;
+}
 
 /*top*/
-.top{width:60px; height:60px; position:fixed; bottom:20px; right:20px; padding:0;}
-
-@media screen and (min-width:1024px) and (max-width:1279px)  /*1024px - 18인치*/
-{
-/*레이아웃*/
-
-footer #section1 .footer_logo{margin-left:10%;}
-footer #section1 .footer_name {margin-left:10%; margin-right:10%;}
-footer{width:100%; background-color:#102e3d;color:#ffd3c2; height:200px;}
+.top {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 0;
 }
 
-@media screen and (min-width:780px) and (max-width:1023px)
-{
-/*레이아웃*/
+@media screen and (min-width: 1024px) and (max-width: 1279px) /*1024px - 18인치*/ {
+  /*레이아웃*/
 
-footer #section1 .footer_logo{margin-left:5%;}
-footer #section1 .footer_name {margin-left:5%; margin-right:5%;}
-footer{width:100%; background-color:#102e3d;color:#ffd3c2; height:200px;}	
+  footer #section1 .footer_logo {
+    margin-left: 10%;
+  }
+  footer #section1 .footer_name {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  footer {
+    width: 100%;
+    background-color: #102e3d;
+    color: #ffd3c2;
+    height: 200px;
+  }
 }
 
-@media screen and (min-width:480px) and (max-width:779px)
-{
-/* 레이아웃 */
+@media screen and (min-width: 780px) and (max-width: 1023px) {
+  /*레이아웃*/
 
-footer #section1 .footer_logo{display:none;}
-footer #section1 .footer_name {margin-left:10%;}
-footer #section1 .footer_time {display:none;}
-footer{width:100%; background-color:#102e3d;color:#ffd3c2; height:200px;}
-#section1{font-size:14px;}
+  footer #section1 .footer_logo {
+    margin-left: 5%;
+  }
+  footer #section1 .footer_name {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  footer {
+    width: 100%;
+    background-color: #102e3d;
+    color: #ffd3c2;
+    height: 200px;
+  }
 }
 
-@media screen and (max-width:479px) /*모바일 사이즈*/
-{
-/* 레이아웃 */
+@media screen and (min-width: 480px) and (max-width: 779px) {
+  /* 레이아웃 */
 
-/*footer #section1 .footer_logo{margin-left:5%; margin-top:0;}
+  footer #section1 .footer_logo {
+    display: none;
+  }
+  footer #section1 .footer_name {
+    margin-left: 10%;
+  }
+  footer #section1 .footer_time {
+    display: none;
+  }
+  footer {
+    width: 100%;
+    background-color: #102e3d;
+    color: #ffd3c2;
+    height: 200px;
+  }
+  #section1 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 479px) /*모바일 사이즈*/ {
+  /* 레이아웃 */
+
+  /*footer #section1 .footer_logo{margin-left:5%; margin-top:0;}
 footer #section1 .footer_name {margin-left:10%; margin-top:5px;}
 footer #section1 .footer_time{margin-left:10%; margin-top:5px;}
 footer{width:100%; background-color:#102e3d;color:#ffd3c2; height:450px;}*/
 
-footer #section1 .footer_logo{margin-left:8%; margin-top:-3%;}
-footer #section1 .footer_name {margin-left:15%; margin-top:-5%;}
-footer #section1 .footer_time{margin-left:15%; margin-top:0;}
-footer{width:100%; background-color:#102e3d;color:#ffd3c2; height:300px;}
-#section1{font-size:10px;}
-footer #section1 .footer_time li h2{font-family:'Hanna', serif; font-size:1.5em; font-weight:400; margin:3px 0;}
+  footer #section1 .footer_logo {
+    margin-left: 8%;
+    margin-top: -3%;
+  }
+  footer #section1 .footer_name {
+    margin-left: 15%;
+    margin-top: -5%;
+  }
+  footer #section1 .footer_time {
+    margin-left: 15%;
+    margin-top: 0;
+  }
+  footer {
+    width: 100%;
+    background-color: #102e3d;
+    color: #ffd3c2;
+    height: 300px;
+  }
+  #section1 {
+    font-size: 10px;
+  }
+  footer #section1 .footer_time li h2 {
+    font-family: "IBM Plex Sans KR", "Hanna", serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 3px 0;
+  }
 
-section:after{content:""; display:block; clear:both; padding-top:0px;}
+  section:after {
+    content: "";
+    display: block;
+    clear: both;
+    padding-top: 0px;
+  }
 
-.mySlides img{margin-top:90px;}
+  .mySlides img {
+    margin-top: 90px;
+  }
 }

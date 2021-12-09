@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Bungee+Inline"); /*메인01~04폰트*/
 @import url("https://fonts.googleapis.com/css?family=Orbitron"); /*사진안에 글자폰트*/
 @import url("http://fonts.googleapis.com/earlyaccess/hanna.css"); /*한글폰트-한나체*/
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@500&display=swap");
+/*2021추가-IBM Plex Sans KR*/
 
 /* reset */
 * {
@@ -12,7 +14,7 @@ ul {
   list-style: none;
 }
 header {
-  font-family: "Bungee Inline", "Hanna", serif;
+  font-family: "Bungee Inline", "IBM Plex Sans KR", "Hanna", serif;
 }
 a {
   outline: 0;
@@ -23,14 +25,14 @@ img {
   border: 0;
 }
 body {
-  font: 12px/1.6 "hanna", sans-serif;
+  font: 12px/1.6 "IBM Plex Sans KR", "hanna", sans-serif;
   color: #555;
 }
 body:lang(en) {
-  font-family: "Hanna", serif, "Sintony", sans-serif;
+  font-family: "IBM Plex Sans KR", "Hanna", serif, "Sintony", sans-serif;
 }
 footer {
-  font: 14px/1.6 "hanna", sans-serif;
+  font: 14px/1.6 "IBM Plex Sans KR", "hanna", sans-serif;
 }
 
 /*타이틀*/
@@ -70,7 +72,7 @@ footer #section1 .footer_time {
   margin-top: 20px;
 }
 footer #section1 .footer_time li h2 {
-  font-family: "Hanna", serif;
+  font-family: "IBM Plex Sans KR", "Hanna", serif;
   font-size: 1.5em;
   font-weight: 400;
   margin: 10px 0;
@@ -585,7 +587,7 @@ footer{width:100%; background-color:#102e3d;color:#ffd3c2; height:200px;}*/
     font-size: 10px;
   }
   footer #section1 .footer_time li h2 {
-    font-family: "Hanna", serif;
+    font-family: "IBM Plex Sans KR", "Hanna", serif;
     font-size: 1.5em;
     font-weight: 400;
     margin: 3px 0;
