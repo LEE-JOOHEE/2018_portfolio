@@ -15,7 +15,7 @@ $(function () {
     });
 
     // JSON을 검색하고 initGallery 함수를 실행
-    $.getJSON("./data/content_wedding.json", initGallery);
+    $.getJSON("./data/content.json", initGallery);
 
     //갤러리 초기화
     function initGallery(data) {
