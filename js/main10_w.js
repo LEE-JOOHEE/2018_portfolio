@@ -82,8 +82,9 @@ $(function () {
       // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 수정구간(모바일 400px정도. 탭970px정도)
       // 링크에 Colorbox 설정
       $container.find("a").colorbox({
-        maxWidth: "970px",
-        maxHeight: "80%",
+        // maxWidth: "970px",
+        maxWidth: "100%",
+        // maxHeight: "80%",
         title: function () {
           return $(this).find(".inner").html();
         },
